@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sienz-portfolio/static/css/main.5fbf9c33.css",
+    "main.js": "/sienz-portfolio/static/js/main.288040e7.js",
+    "static/js/453.9d1e2ecb.chunk.js": "/sienz-portfolio/static/js/453.9d1e2ecb.chunk.js",
+    "static/media/profile_1.jpg": "/sienz-portfolio/static/media/profile_1.92ff14b235a6dcb8fe33.jpg",
+    "index.html": "/sienz-portfolio/index.html",
+    "main.5fbf9c33.css.map": "/sienz-portfolio/static/css/main.5fbf9c33.css.map",
+    "main.288040e7.js.map": "/sienz-portfolio/static/js/main.288040e7.js.map",
+    "453.9d1e2ecb.chunk.js.map": "/sienz-portfolio/static/js/453.9d1e2ecb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fbf9c33.css",
+    "static/js/main.288040e7.js"
+  ]
+}
