@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/sienz-portfolio/static/css/main.5fbf9c33.css",
-    "main.js": "/sienz-portfolio/static/js/main.288040e7.js",
+    "main.css": "/sienz-portfolio/static/css/main.f52a576d.css",
+    "main.js": "/sienz-portfolio/static/js/main.b3e4ee4d.js",
     "static/js/453.9d1e2ecb.chunk.js": "/sienz-portfolio/static/js/453.9d1e2ecb.chunk.js",
+    "static/media/mystudykpi.png": "/sienz-portfolio/static/media/mystudykpi.a39c36dd57415d3d6563.png",
+    "static/media/venue.png": "/sienz-portfolio/static/media/venue.ef9ff5bbc0e935eea080.png",
+    "static/media/event_details.png": "/sienz-portfolio/static/media/event_details.55549f82391526fd999f.png",
+    "static/media/ramadhan_companion.png": "/sienz-portfolio/static/media/ramadhan_companion.d69cbf00b0609366faf4.png",
+    "static/media/event_list.png": "/sienz-portfolio/static/media/event_list.e49b7b6fd22102fd01e9.png",
+    "static/media/welcome.png": "/sienz-portfolio/static/media/welcome.ed6a6dfcf0c5834de285.png",
+    "static/media/profile_2.jpg": "/sienz-portfolio/static/media/profile_2.7838e9cf5a04303f8712.jpg",
+    "static/media/notification.png": "/sienz-portfolio/static/media/notification.a579221af7d6eada5ad7.png",
     "static/media/profile_1.jpg": "/sienz-portfolio/static/media/profile_1.92ff14b235a6dcb8fe33.jpg",
     "index.html": "/sienz-portfolio/index.html",
-    "main.5fbf9c33.css.map": "/sienz-portfolio/static/css/main.5fbf9c33.css.map",
-    "main.288040e7.js.map": "/sienz-portfolio/static/js/main.288040e7.js.map",
+    "main.f52a576d.css.map": "/sienz-portfolio/static/css/main.f52a576d.css.map",
+    "main.b3e4ee4d.js.map": "/sienz-portfolio/static/js/main.b3e4ee4d.js.map",
     "453.9d1e2ecb.chunk.js.map": "/sienz-portfolio/static/js/453.9d1e2ecb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fbf9c33.css",
-    "static/js/main.288040e7.js"
+    "static/css/main.f52a576d.css",
+    "static/js/main.b3e4ee4d.js"
   ]
 }
