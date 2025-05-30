@@ -1,0 +1,45 @@
+.celebration-container {
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  opacity: 0;
+  z-index: 20;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    top: -20px;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+.emoji {
+  display: inline-block;
+  animation: celebration 2s infinite;
+}
+
+@keyframes celebration {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(-10deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(10deg);
+  }
+} 

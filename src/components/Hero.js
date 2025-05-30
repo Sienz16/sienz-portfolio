@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import SocialMediaLinks from './SocialMediaLinks';
 // Import a placeholder image (you'll need to add your profile image to assets folder)
 import profileImg from '../assets/profile_1.jpg';
@@ -110,25 +111,27 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start"
           >
-            <motion.button 
-              whileHover={{ y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('projects')} 
-              className="inline-flex items-center rounded-md bg-emerald-600 px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-white shadow-sm hover:bg-emerald-700 transition-all duration-300"
-            >
-              View Projects
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 ml-1.5 md:ml-2" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </motion.button>
-            <motion.button 
-              whileHover={{ y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')} 
-              className="inline-flex items-center rounded-md border-2 border-emerald-600 px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-emerald-600 hover:bg-emerald-50 dark:text-emerald-400 dark:border-emerald-400 dark:hover:bg-emerald-900/30 transition-all duration-300"
-            >
-              Contact Me
-            </motion.button>
+            <Link to="/projects">
+              <motion.button 
+                whileHover={{ y: -4 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center rounded-md bg-emerald-600 px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-white shadow-sm hover:bg-emerald-700 transition-all duration-300"
+              >
+                View Projects
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 ml-1.5 md:ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </motion.button>
+            </Link>
+            <Link to="/contact">
+              <motion.button 
+                whileHover={{ y: -4 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center rounded-md border-2 border-emerald-600 px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-emerald-600 hover:bg-emerald-50 dark:text-emerald-400 dark:border-emerald-400 dark:hover:bg-emerald-900/30 transition-all duration-300"
+              >
+                Contact Me
+              </motion.button>
+            </Link>
           </motion.div>
           
           {/* Social links using component */}

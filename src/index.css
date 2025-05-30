@@ -4,13 +4,17 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+    @apply bg-white dark:bg-[#161615] text-gray-900 dark:text-gray-100;
+  }
+
+  ::selection {
+    @apply bg-emerald-500/30 dark:bg-emerald-500/40;
   }
 }
 
 @layer components {
   .nav-link {
-    @apply px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors;
+    @apply px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors;
   }
   
   .section-title {
@@ -18,7 +22,15 @@
   }
   
   .card {
-    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+    @apply bg-white dark:bg-[#1E1E1D] rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl border border-gray-100 dark:border-emerald-900/10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center rounded-md border-2 border-emerald-600 px-4 py-2 text-sm font-medium text-emerald-600 hover:bg-emerald-50 dark:text-emerald-400 dark:border-emerald-400 dark:hover:bg-emerald-900/30 transition-all duration-300;
   }
 }
 
@@ -41,8 +53,13 @@
 
 .animation-delay-2000 {
   animation-delay: 2s;
-}
+  }
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Focus styles for accessibility */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:focus:ring-offset-[#161615];
 }

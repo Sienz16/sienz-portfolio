@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import PageTitle from '../components/PageTitle';
 import { motion } from 'framer-motion';
 
 const NotFound = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
-      <SEO title="Page Not Found" description="The page you're looking for doesn't exist." />
+      <PageTitle title="Page Not Found" />
       
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ const NotFound = () => {
         
         <Link 
           to="/"
-          className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
         >
           Back to Home
         </Link>

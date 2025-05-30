@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImg from '../assets/profile_1.jpg'; // Using the same profile image as Hero for now
+import profileImg from '../assets/profile_2.jpg'; // Using the same profile image as Hero for now
 
 const About = () => {
   const scrollToSection = (sectionId) => {
@@ -11,11 +11,11 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-24 px-6 md:px-10 bg-gradient-to-b from-emerald-50 to-green-50 dark:from-emerald-950/30 dark:to-green-950/30">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section id="about" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* About image */}
         <motion.div 
-          className="md:w-2/5"
+          className="w-full p-8 max-w-sm md:max-w-none md:w-2/5"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -23,15 +23,15 @@ const About = () => {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl transform -rotate-6"></div>
             {/* Profile image instead of gradient background */}
-            <div className="relative w-full h-64 md:h-120 rounded-xl shadow-lg overflow-hidden">
+            <div className="relative w-full h-80 sm:h-96 md:h-120 rounded-xl shadow-lg overflow-hidden">
               <img src={profileImg} alt="Mohamad Fazli" className="w-full h-full object-cover" />
             </div>
             
             {/* Experience badge */}
-            <div className="absolute -right-6 -bottom-6 bg-white dark:bg-[#161615] rounded-lg shadow-lg p-4 flex items-center justify-center">
+            <div className="absolute -right-4 sm:-right-6 -bottom-4 sm:-bottom-6 bg-white dark:bg-[#161615] rounded-lg shadow-lg p-3 sm:p-4 flex items-center justify-center">
               <div className="text-center">
-                <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">23</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Years<br/>Old</p>
+                <p className="text-2xl sm:text-3xl font-bold text-emerald-600 dark:text-emerald-400">23</p>
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">Years<br/>Old</p>
               </div>
             </div>
           </div>
@@ -39,12 +39,12 @@ const About = () => {
         
         {/* About content */}
         <motion.div 
-          className="md:w-3/5"
+          className="md:w-3/5 mt-8 md:mt-0"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-3 sm:p-6">
             <motion.span 
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ const About = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl text-center font-bold mb-4 sm:mb-6"
             >
               Newbie Software Engineer
             </motion.h2>
@@ -69,7 +69,7 @@ const About = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-lg text-gray-600 dark:text-gray-300 mb-6"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6"
             >
               I'm Mohamad Fazli, also known as Sienz, a final year student pursuing a Bachelor's Degree in Computer Science with Honours, specializing in Software Engineering.
             </motion.p>
@@ -77,7 +77,7 @@ const About = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="text-lg text-gray-600 dark:text-gray-300 mb-6"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6"
             >
               My journey in Computer Science began during my first year of university. Although relatively new to the field, I've immersed myself in various technologies and frameworks over the past few years of my 4-year degree program.
             </motion.p>
@@ -85,7 +85,7 @@ const About = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="text-lg text-gray-600 dark:text-gray-300 mb-8"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8"
             >
               Currently completing my internship, I'm focused on applying my knowledge of web development, including Laravel and Vue.js, while expanding my skills in mobile application development and server infrastructure.
             </motion.p>

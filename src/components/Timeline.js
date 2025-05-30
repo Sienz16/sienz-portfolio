@@ -154,7 +154,7 @@ const Timeline = () => {
               {/* Content card with alternating left/right on both mobile and desktop */}
               <div className="flex justify-center pt-20">
                 <motion.div 
-                  className={`w-[85%] md:w-[42%] bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 md:p-6 transform transition-all duration-300 hover:shadow-lg border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-200 dark:hover:border-emerald-800/50 ${
+                  className={`w-[85%] md:w-[42%] bg-white dark:bg-[#1E1E1D] rounded-xl shadow-md p-4 md:p-6 transform transition-all duration-300 hover:shadow-lg border border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-200 dark:hover:border-emerald-800/50 ${
                     index % 2 !== 0 ? 'ml-auto text-right' : 'mr-auto text-left'
                   }`}
                   whileHover={{ y: -5 }}

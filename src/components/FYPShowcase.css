@@ -1,0 +1,59 @@
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Mobile fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Pin bounce animation */
+@keyframes bounce-small {
+  0%, 100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-12deg);
+  }
+}
+
+.animate-bounce-small {
+  animation: bounce-small 2s ease-in-out infinite;
+}
+
+/* Custom negative margin classes */
+.-ml-126 {
+  margin-left: -126px;
+}
+
+.-ml-146 {
+  margin-left: -146px;
+}
+
+.-mr-126 {
+  margin-right: -126px;
+}
+
+.-mr-146 {
+  margin-right: -146px;
+}
+
+/* Custom z-index */
+.z-25 {
+  z-index: 25;
+}
+
+.z-15 {
+  z-index: 15;
+} 
