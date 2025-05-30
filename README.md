@@ -30,8 +30,8 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and hoste
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/sienz-portfolio.git
-   cd sienz-portfolio
+   git clone 
+   cd 
    ```
 
 2. Install dependencies:
