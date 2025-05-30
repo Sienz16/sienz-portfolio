@@ -50,7 +50,7 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and hoste
 
 1. Update the `homepage` field in `package.json` with your GitHub Pages URL:
    ```json
-   "homepage": "https://yourusername.github.io/sienz-portfolio"
+   "homepage": "update here"
    ```
 
 2. Deploy to GitHub Pages:
