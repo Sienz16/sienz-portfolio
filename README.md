@@ -78,12 +78,4 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and hoste
 - Replace the logo and favicon in the `public` folder
 - Add your own project images in the `src/assets` folder
 
-## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/sienz-portfolio](https://github.com/yourusername/sienz-portfolio)
